@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3BFCDA9494A89C7427F4C463 /* Pods_SwiftyTasksTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC7D8509DEA71BE599A0A307 /* Pods_SwiftyTasksTests.framework */; };
 		43AD93B1289518730040E5B3 /* SwiftyTasksApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43AD93B0289518730040E5B3 /* SwiftyTasksApp.swift */; };
 		43AD93B3289518730040E5B3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43AD93B2289518730040E5B3 /* ContentView.swift */; };
 		43AD93B5289518870040E5B3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 43AD93B4289518870040E5B3 /* Assets.xcassets */; };
@@ -15,6 +16,8 @@
 		43B00BED28A50B19007EEC5A /* TaskViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43B00BEC28A50B19007EEC5A /* TaskViewModel.swift */; };
 		43B00BEF28A50B21007EEC5A /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43B00BEE28A50B21007EEC5A /* Task.swift */; };
 		43B00BF128A515E6007EEC5A /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43B00BF028A515E6007EEC5A /* HomeView.swift */; };
+		43B00BF528A51B13007EEC5A /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43B00BF428A51B13007EEC5A /* R.generated.swift */; };
+		C2130A57C4E6FF27B959AF22 /* Pods_SwiftyTasks.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FC26089F8B285D4906D9DB1 /* Pods_SwiftyTasks.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,6 +31,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		36C426411D01E0149C941451 /* Pods-SwiftyTasks.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftyTasks.release.xcconfig"; path = "Target Support Files/Pods-SwiftyTasks/Pods-SwiftyTasks.release.xcconfig"; sourceTree = "<group>"; };
+		37C8D7E5E003FCDF5DFCD390 /* Pods-SwiftyTasksTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftyTasksTests.release.xcconfig"; path = "Target Support Files/Pods-SwiftyTasksTests/Pods-SwiftyTasksTests.release.xcconfig"; sourceTree = "<group>"; };
 		43AD93AD289518730040E5B3 /* SwiftyTasks.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftyTasks.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		43AD93B0289518730040E5B3 /* SwiftyTasksApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftyTasksApp.swift; sourceTree = "<group>"; };
 		43AD93B2289518730040E5B3 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -39,6 +44,11 @@
 		43B00BEC28A50B19007EEC5A /* TaskViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskViewModel.swift; sourceTree = "<group>"; };
 		43B00BEE28A50B21007EEC5A /* Task.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
 		43B00BF028A515E6007EEC5A /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		43B00BF428A51B13007EEC5A /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = "<group>"; };
+		4E068459508E177574281CF7 /* Pods-SwiftyTasksTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftyTasksTests.debug.xcconfig"; path = "Target Support Files/Pods-SwiftyTasksTests/Pods-SwiftyTasksTests.debug.xcconfig"; sourceTree = "<group>"; };
+		4FC26089F8B285D4906D9DB1 /* Pods_SwiftyTasks.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftyTasks.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BF8F5EEA18C5C0D04BF5C1D8 /* Pods-SwiftyTasks.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftyTasks.debug.xcconfig"; path = "Target Support Files/Pods-SwiftyTasks/Pods-SwiftyTasks.debug.xcconfig"; sourceTree = "<group>"; };
+		FC7D8509DEA71BE599A0A307 /* Pods_SwiftyTasksTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftyTasksTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,6 +56,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C2130A57C4E6FF27B959AF22 /* Pods_SwiftyTasks.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -53,18 +64,42 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3BFCDA9494A89C7427F4C463 /* Pods_SwiftyTasksTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2F8BC1C6A9518033919853C6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4FC26089F8B285D4906D9DB1 /* Pods_SwiftyTasks.framework */,
+				FC7D8509DEA71BE599A0A307 /* Pods_SwiftyTasksTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3499BF275C5095B95A9D3AF3 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				BF8F5EEA18C5C0D04BF5C1D8 /* Pods-SwiftyTasks.debug.xcconfig */,
+				36C426411D01E0149C941451 /* Pods-SwiftyTasks.release.xcconfig */,
+				4E068459508E177574281CF7 /* Pods-SwiftyTasksTests.debug.xcconfig */,
+				37C8D7E5E003FCDF5DFCD390 /* Pods-SwiftyTasksTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		43AD93A4289518730040E5B3 = {
 			isa = PBXGroup;
 			children = (
+				43B00BF428A51B13007EEC5A /* R.generated.swift */,
 				43AD93AF289518730040E5B3 /* SwiftyTasks */,
 				43AD93C0289518870040E5B3 /* SwiftyTasksTests */,
 				43AD93AE289518730040E5B3 /* Products */,
+				3499BF275C5095B95A9D3AF3 /* Pods */,
+				2F8BC1C6A9518033919853C6 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -155,9 +190,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 43AD93D1289518870040E5B3 /* Build configuration list for PBXNativeTarget "SwiftyTasks" */;
 			buildPhases = (
+				CC5E37416A3238D6873AB380 /* [CP] Check Pods Manifest.lock */,
+				43B00BF228A51A64007EEC5A /* R.Swift Script */,
 				43AD93A9289518730040E5B3 /* Sources */,
 				43AD93AA289518730040E5B3 /* Frameworks */,
 				43AD93AB289518730040E5B3 /* Resources */,
+				0442F3FA3CBD12358B2A1FB1 /* [CP] Embed Pods Frameworks */,
+				43B00BF628A51C09007EEC5A /* Run SwiftLint Script */,
 			);
 			buildRules = (
 			);
@@ -172,6 +211,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 43AD93D4289518870040E5B3 /* Build configuration list for PBXNativeTarget "SwiftyTasksTests" */;
 			buildPhases = (
+				5FD777E68F623143D86418D4 /* [CP] Check Pods Manifest.lock */,
 				43AD93B9289518870040E5B3 /* Sources */,
 				43AD93BA289518870040E5B3 /* Frameworks */,
 				43AD93BB289518870040E5B3 /* Resources */,
@@ -243,6 +283,108 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0442F3FA3CBD12358B2A1FB1 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SwiftyTasks/Pods-SwiftyTasks-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SwiftyTasks/Pods-SwiftyTasks-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SwiftyTasks/Pods-SwiftyTasks-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		43B00BF228A51A64007EEC5A /* R.Swift Script */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "R.Swift Script";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				$SRCROOT/R.generated.swift,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"$PODS_ROOT/R.swift/rswift\" generate \"$SRCROOT/R.generated.swift\"\n";
+		};
+		43B00BF628A51C09007EEC5A /* Run SwiftLint Script */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Run SwiftLint Script";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "${PODS_ROOT}/SwiftLint/swiftlint\n";
+		};
+		5FD777E68F623143D86418D4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SwiftyTasksTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CC5E37416A3238D6873AB380 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SwiftyTasks-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		43AD93A9289518730040E5B3 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -253,6 +395,7 @@
 				43B00BED28A50B19007EEC5A /* TaskViewModel.swift in Sources */,
 				43B00BF128A515E6007EEC5A /* HomeView.swift in Sources */,
 				43AD93B1289518730040E5B3 /* SwiftyTasksApp.swift in Sources */,
+				43B00BF528A51B13007EEC5A /* R.generated.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -393,15 +536,16 @@
 		};
 		43AD93D2289518870040E5B3 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BF8F5EEA18C5C0D04BF5C1D8 /* Pods-SwiftyTasks.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"SwfityTasks/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"SwiftyTasks/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = SwfityTasks/Info.plist;
+				INFOPLIST_FILE = SwiftyTasks/Resources/Info.plist;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -414,7 +558,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.kinfante.SwfityTasks;
+				PRODUCT_BUNDLE_IDENTIFIER = com.kinfante.SwiftyTasks;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -424,15 +568,16 @@
 		};
 		43AD93D3289518870040E5B3 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 36C426411D01E0149C941451 /* Pods-SwiftyTasks.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"SwfityTasks/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"SwiftyTasks/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = SwfityTasks/Info.plist;
+				INFOPLIST_FILE = SwiftyTasks/Resources/Info.plist;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -445,7 +590,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.kinfante.SwfityTasks;
+				PRODUCT_BUNDLE_IDENTIFIER = com.kinfante.SwiftyTasks;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -455,6 +600,7 @@
 		};
 		43AD93D5289518870040E5B3 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4E068459508E177574281CF7 /* Pods-SwiftyTasksTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -479,6 +625,7 @@
 		};
 		43AD93D6289518870040E5B3 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 37C8D7E5E003FCDF5DFCD390 /* Pods-SwiftyTasksTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
