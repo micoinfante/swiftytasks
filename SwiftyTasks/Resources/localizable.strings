@@ -1,0 +1,10 @@
+/* 
+  localizable.strings
+  SwiftyTasks
+
+  Created by Mico Infante on 8/11/22.
+  
+*/
+
+
+"home.today" = "Today";
