@@ -18,6 +18,9 @@
 		43B00BF128A515E6007EEC5A /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43B00BF028A515E6007EEC5A /* HomeView.swift */; };
 		43B00BF528A51B13007EEC5A /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43B00BF428A51B13007EEC5A /* R.generated.swift */; };
 		43B00BF828A51FF8007EEC5A /* localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 43B00BF728A51FF8007EEC5A /* localizable.strings */; };
+		43B00BFB28A54790007EEC5A /* SwiftUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43B00BFA28A54790007EEC5A /* SwiftUI.swift */; };
+		43B00BFD28A54A7E007EEC5A /* View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43B00BFC28A54A7E007EEC5A /* View.swift */; };
+		43B00BFF28A5520C007EEC5A /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43B00BFE28A5520C007EEC5A /* Helpers.swift */; };
 		C2130A57C4E6FF27B959AF22 /* Pods_SwiftyTasks.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FC26089F8B285D4906D9DB1 /* Pods_SwiftyTasks.framework */; };
 /* End PBXBuildFile section */
 
@@ -47,6 +50,9 @@
 		43B00BF028A515E6007EEC5A /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		43B00BF428A51B13007EEC5A /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = "<group>"; };
 		43B00BF728A51FF8007EEC5A /* localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = localizable.strings; sourceTree = "<group>"; };
+		43B00BFA28A54790007EEC5A /* SwiftUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUI.swift; sourceTree = "<group>"; };
+		43B00BFC28A54A7E007EEC5A /* View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = View.swift; sourceTree = "<group>"; };
+		43B00BFE28A5520C007EEC5A /* Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helpers.swift; sourceTree = "<group>"; };
 		4E068459508E177574281CF7 /* Pods-SwiftyTasksTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftyTasksTests.debug.xcconfig"; path = "Target Support Files/Pods-SwiftyTasksTests/Pods-SwiftyTasksTests.debug.xcconfig"; sourceTree = "<group>"; };
 		4FC26089F8B285D4906D9DB1 /* Pods_SwiftyTasks.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftyTasks.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF8F5EEA18C5C0D04BF5C1D8 /* Pods-SwiftyTasks.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftyTasks.debug.xcconfig"; path = "Target Support Files/Pods-SwiftyTasks/Pods-SwiftyTasks.debug.xcconfig"; sourceTree = "<group>"; };
@@ -117,6 +123,7 @@
 		43AD93AF289518730040E5B3 /* SwiftyTasks */ = {
 			isa = PBXGroup;
 			children = (
+				43B00BF928A54044007EEC5A /* Extensions */,
 				43B00BEA28A50AD7007EEC5A /* Views */,
 				43B00BE928A50A55007EEC5A /* Resources */,
 				43B00BE828A50A50007EEC5A /* Models */,
@@ -184,6 +191,16 @@
 				43B00BF028A515E6007EEC5A /* HomeView.swift */,
 			);
 			path = UI;
+			sourceTree = "<group>";
+		};
+		43B00BF928A54044007EEC5A /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				43B00BFA28A54790007EEC5A /* SwiftUI.swift */,
+				43B00BFC28A54A7E007EEC5A /* View.swift */,
+				43B00BFE28A5520C007EEC5A /* Helpers.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -394,8 +411,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				43B00BFD28A54A7E007EEC5A /* View.swift in Sources */,
 				43B00BEF28A50B21007EEC5A /* Task.swift in Sources */,
+				43B00BFB28A54790007EEC5A /* SwiftUI.swift in Sources */,
 				43AD93B3289518730040E5B3 /* ContentView.swift in Sources */,
+				43B00BFF28A5520C007EEC5A /* Helpers.swift in Sources */,
 				43B00BED28A50B19007EEC5A /* TaskViewModel.swift in Sources */,
 				43B00BF128A515E6007EEC5A /* HomeView.swift in Sources */,
 				43AD93B1289518730040E5B3 /* SwiftyTasksApp.swift in Sources */,
