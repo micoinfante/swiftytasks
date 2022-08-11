@@ -1,6 +1,6 @@
 //
-//  SwfityTasksApp.swift
-//  SwfityTasks
+//  SwiftyTasksApp.swift
+//  SwiftyTasks
 //
 //  Created by Mico Infante on 7/30/22.
 //

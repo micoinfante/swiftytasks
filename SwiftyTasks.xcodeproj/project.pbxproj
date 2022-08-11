@@ -7,13 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		43AD93B1289518730040E5B3 /* SwfityTasksApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43AD93B0289518730040E5B3 /* SwfityTasksApp.swift */; };
+		43AD93B1289518730040E5B3 /* SwiftyTasksApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43AD93B0289518730040E5B3 /* SwiftyTasksApp.swift */; };
 		43AD93B3289518730040E5B3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43AD93B2289518730040E5B3 /* ContentView.swift */; };
 		43AD93B5289518870040E5B3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 43AD93B4289518870040E5B3 /* Assets.xcassets */; };
 		43AD93B8289518870040E5B3 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 43AD93B7289518870040E5B3 /* Preview Assets.xcassets */; };
-		43AD93C2289518870040E5B3 /* SwfityTasksTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43AD93C1289518870040E5B3 /* SwfityTasksTests.swift */; };
-		43AD93CC289518870040E5B3 /* SwfityTasksUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43AD93CB289518870040E5B3 /* SwfityTasksUITests.swift */; };
-		43AD93CE289518870040E5B3 /* SwfityTasksUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43AD93CD289518870040E5B3 /* SwfityTasksUITestsLaunchTests.swift */; };
+		43AD93C2289518870040E5B3 /* SwiftyTasksTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43AD93C1289518870040E5B3 /* SwiftyTasksTests.swift */; };
+		43B00BED28A50B19007EEC5A /* TaskViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43B00BEC28A50B19007EEC5A /* TaskViewModel.swift */; };
+		43B00BEF28A50B21007EEC5A /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43B00BEE28A50B21007EEC5A /* Task.swift */; };
+		43B00BF128A515E6007EEC5A /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43B00BF028A515E6007EEC5A /* HomeView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -24,26 +25,20 @@
 			remoteGlobalIDString = 43AD93AC289518730040E5B3;
 			remoteInfo = SwfityTasks;
 		};
-		43AD93C8289518870040E5B3 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 43AD93A5289518730040E5B3 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 43AD93AC289518730040E5B3;
-			remoteInfo = SwfityTasks;
-		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		43AD93AD289518730040E5B3 /* SwfityTasks.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwfityTasks.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		43AD93B0289518730040E5B3 /* SwfityTasksApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwfityTasksApp.swift; sourceTree = "<group>"; };
+		43AD93AD289518730040E5B3 /* SwiftyTasks.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftyTasks.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		43AD93B0289518730040E5B3 /* SwiftyTasksApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftyTasksApp.swift; sourceTree = "<group>"; };
 		43AD93B2289518730040E5B3 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		43AD93B4289518870040E5B3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		43AD93B7289518870040E5B3 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		43AD93BD289518870040E5B3 /* SwfityTasksTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwfityTasksTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		43AD93C1289518870040E5B3 /* SwfityTasksTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwfityTasksTests.swift; sourceTree = "<group>"; };
-		43AD93C7289518870040E5B3 /* SwfityTasksUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwfityTasksUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		43AD93CB289518870040E5B3 /* SwfityTasksUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwfityTasksUITests.swift; sourceTree = "<group>"; };
-		43AD93CD289518870040E5B3 /* SwfityTasksUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwfityTasksUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		43AD93BD289518870040E5B3 /* SwiftyTasksTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftyTasksTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		43AD93C1289518870040E5B3 /* SwiftyTasksTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftyTasksTests.swift; sourceTree = "<group>"; };
+		43AD93DA289518D30040E5B3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		43B00BEC28A50B19007EEC5A /* TaskViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskViewModel.swift; sourceTree = "<group>"; };
+		43B00BEE28A50B21007EEC5A /* Task.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
+		43B00BF028A515E6007EEC5A /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,22 +56,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		43AD93C4289518870040E5B3 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
 		43AD93A4289518730040E5B3 = {
 			isa = PBXGroup;
 			children = (
-				43AD93AF289518730040E5B3 /* SwfityTasks */,
-				43AD93C0289518870040E5B3 /* SwfityTasksTests */,
-				43AD93CA289518870040E5B3 /* SwfityTasksUITests */,
+				43AD93AF289518730040E5B3 /* SwiftyTasks */,
+				43AD93C0289518870040E5B3 /* SwiftyTasksTests */,
 				43AD93AE289518730040E5B3 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -84,22 +71,24 @@
 		43AD93AE289518730040E5B3 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				43AD93AD289518730040E5B3 /* SwfityTasks.app */,
-				43AD93BD289518870040E5B3 /* SwfityTasksTests.xctest */,
-				43AD93C7289518870040E5B3 /* SwfityTasksUITests.xctest */,
+				43AD93AD289518730040E5B3 /* SwiftyTasks.app */,
+				43AD93BD289518870040E5B3 /* SwiftyTasksTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		43AD93AF289518730040E5B3 /* SwfityTasks */ = {
+		43AD93AF289518730040E5B3 /* SwiftyTasks */ = {
 			isa = PBXGroup;
 			children = (
-				43AD93B0289518730040E5B3 /* SwfityTasksApp.swift */,
+				43B00BEA28A50AD7007EEC5A /* Views */,
+				43B00BE928A50A55007EEC5A /* Resources */,
+				43B00BE828A50A50007EEC5A /* Models */,
+				43B00BE728A50A46007EEC5A /* ViewModels */,
+				43AD93B0289518730040E5B3 /* SwiftyTasksApp.swift */,
 				43AD93B2289518730040E5B3 /* ContentView.swift */,
-				43AD93B4289518870040E5B3 /* Assets.xcassets */,
 				43AD93B6289518870040E5B3 /* Preview Content */,
 			);
-			path = SwfityTasks;
+			path = SwiftyTasks;
 			sourceTree = "<group>";
 		};
 		43AD93B6289518870040E5B3 /* Preview Content */ = {
@@ -110,29 +99,61 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
-		43AD93C0289518870040E5B3 /* SwfityTasksTests */ = {
+		43AD93C0289518870040E5B3 /* SwiftyTasksTests */ = {
 			isa = PBXGroup;
 			children = (
-				43AD93C1289518870040E5B3 /* SwfityTasksTests.swift */,
+				43AD93C1289518870040E5B3 /* SwiftyTasksTests.swift */,
 			);
-			path = SwfityTasksTests;
+			path = SwiftyTasksTests;
 			sourceTree = "<group>";
 		};
-		43AD93CA289518870040E5B3 /* SwfityTasksUITests */ = {
+		43B00BE728A50A46007EEC5A /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
-				43AD93CB289518870040E5B3 /* SwfityTasksUITests.swift */,
-				43AD93CD289518870040E5B3 /* SwfityTasksUITestsLaunchTests.swift */,
+				43B00BEC28A50B19007EEC5A /* TaskViewModel.swift */,
 			);
-			path = SwfityTasksUITests;
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		43B00BE828A50A50007EEC5A /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				43B00BEE28A50B21007EEC5A /* Task.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		43B00BE928A50A55007EEC5A /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				43AD93DA289518D30040E5B3 /* Info.plist */,
+				43AD93B4289518870040E5B3 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		43B00BEA28A50AD7007EEC5A /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				43B00BEB28A50AE7007EEC5A /* UI */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		43B00BEB28A50AE7007EEC5A /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				43B00BF028A515E6007EEC5A /* HomeView.swift */,
+			);
+			path = UI;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		43AD93AC289518730040E5B3 /* SwfityTasks */ = {
+		43AD93AC289518730040E5B3 /* SwiftyTasks */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 43AD93D1289518870040E5B3 /* Build configuration list for PBXNativeTarget "SwfityTasks" */;
+			buildConfigurationList = 43AD93D1289518870040E5B3 /* Build configuration list for PBXNativeTarget "SwiftyTasks" */;
 			buildPhases = (
 				43AD93A9289518730040E5B3 /* Sources */,
 				43AD93AA289518730040E5B3 /* Frameworks */,
@@ -142,14 +163,14 @@
 			);
 			dependencies = (
 			);
-			name = SwfityTasks;
+			name = SwiftyTasks;
 			productName = SwfityTasks;
-			productReference = 43AD93AD289518730040E5B3 /* SwfityTasks.app */;
+			productReference = 43AD93AD289518730040E5B3 /* SwiftyTasks.app */;
 			productType = "com.apple.product-type.application";
 		};
-		43AD93BC289518870040E5B3 /* SwfityTasksTests */ = {
+		43AD93BC289518870040E5B3 /* SwiftyTasksTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 43AD93D4289518870040E5B3 /* Build configuration list for PBXNativeTarget "SwfityTasksTests" */;
+			buildConfigurationList = 43AD93D4289518870040E5B3 /* Build configuration list for PBXNativeTarget "SwiftyTasksTests" */;
 			buildPhases = (
 				43AD93B9289518870040E5B3 /* Sources */,
 				43AD93BA289518870040E5B3 /* Frameworks */,
@@ -160,28 +181,10 @@
 			dependencies = (
 				43AD93BF289518870040E5B3 /* PBXTargetDependency */,
 			);
-			name = SwfityTasksTests;
+			name = SwiftyTasksTests;
 			productName = SwfityTasksTests;
-			productReference = 43AD93BD289518870040E5B3 /* SwfityTasksTests.xctest */;
+			productReference = 43AD93BD289518870040E5B3 /* SwiftyTasksTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		43AD93C6289518870040E5B3 /* SwfityTasksUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 43AD93D7289518870040E5B3 /* Build configuration list for PBXNativeTarget "SwfityTasksUITests" */;
-			buildPhases = (
-				43AD93C3289518870040E5B3 /* Sources */,
-				43AD93C4289518870040E5B3 /* Frameworks */,
-				43AD93C5289518870040E5B3 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				43AD93C9289518870040E5B3 /* PBXTargetDependency */,
-			);
-			name = SwfityTasksUITests;
-			productName = SwfityTasksUITests;
-			productReference = 43AD93C7289518870040E5B3 /* SwfityTasksUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
 
@@ -200,13 +203,9 @@
 						CreatedOnToolsVersion = 13.0;
 						TestTargetID = 43AD93AC289518730040E5B3;
 					};
-					43AD93C6289518870040E5B3 = {
-						CreatedOnToolsVersion = 13.0;
-						TestTargetID = 43AD93AC289518730040E5B3;
-					};
 				};
 			};
-			buildConfigurationList = 43AD93A8289518730040E5B3 /* Build configuration list for PBXProject "SwfityTasks" */;
+			buildConfigurationList = 43AD93A8289518730040E5B3 /* Build configuration list for PBXProject "SwiftyTasks" */;
 			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -219,9 +218,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				43AD93AC289518730040E5B3 /* SwfityTasks */,
-				43AD93BC289518870040E5B3 /* SwfityTasksTests */,
-				43AD93C6289518870040E5B3 /* SwfityTasksUITests */,
+				43AD93AC289518730040E5B3 /* SwiftyTasks */,
+				43AD93BC289518870040E5B3 /* SwiftyTasksTests */,
 			);
 		};
 /* End PBXProject section */
@@ -243,13 +241,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		43AD93C5289518870040E5B3 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -257,8 +248,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				43B00BEF28A50B21007EEC5A /* Task.swift in Sources */,
 				43AD93B3289518730040E5B3 /* ContentView.swift in Sources */,
-				43AD93B1289518730040E5B3 /* SwfityTasksApp.swift in Sources */,
+				43B00BED28A50B19007EEC5A /* TaskViewModel.swift in Sources */,
+				43B00BF128A515E6007EEC5A /* HomeView.swift in Sources */,
+				43AD93B1289518730040E5B3 /* SwiftyTasksApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -266,16 +260,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				43AD93C2289518870040E5B3 /* SwfityTasksTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		43AD93C3289518870040E5B3 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				43AD93CC289518870040E5B3 /* SwfityTasksUITests.swift in Sources */,
-				43AD93CE289518870040E5B3 /* SwfityTasksUITestsLaunchTests.swift in Sources */,
+				43AD93C2289518870040E5B3 /* SwiftyTasksTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -284,13 +269,8 @@
 /* Begin PBXTargetDependency section */
 		43AD93BF289518870040E5B3 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 43AD93AC289518730040E5B3 /* SwfityTasks */;
+			target = 43AD93AC289518730040E5B3 /* SwiftyTasks */;
 			targetProxy = 43AD93BE289518870040E5B3 /* PBXContainerItemProxy */;
-		};
-		43AD93C9289518870040E5B3 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 43AD93AC289518730040E5B3 /* SwfityTasks */;
-			targetProxy = 43AD93C8289518870040E5B3 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -421,6 +401,8 @@
 				DEVELOPMENT_ASSET_PATHS = "\"SwfityTasks/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SwfityTasks/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -450,6 +432,8 @@
 				DEVELOPMENT_ASSET_PATHS = "\"SwfityTasks/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SwfityTasks/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -489,7 +473,7 @@
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SwfityTasks.app/SwfityTasks";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SwiftyTasks.app/SwiftyTasks";
 			};
 			name = Debug;
 		};
@@ -513,58 +497,14 @@
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SwfityTasks.app/SwfityTasks";
-			};
-			name = Release;
-		};
-		43AD93D8289518870040E5B3 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				GENERATE_INFOPLIST_FILE = YES;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.kinfante.SwfityTasksUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = SwfityTasks;
-			};
-			name = Debug;
-		};
-		43AD93D9289518870040E5B3 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				GENERATE_INFOPLIST_FILE = YES;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.kinfante.SwfityTasksUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = SwfityTasks;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SwiftyTasks.app/SwiftyTasks";
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		43AD93A8289518730040E5B3 /* Build configuration list for PBXProject "SwfityTasks" */ = {
+		43AD93A8289518730040E5B3 /* Build configuration list for PBXProject "SwiftyTasks" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				43AD93CF289518870040E5B3 /* Debug */,
@@ -573,7 +513,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		43AD93D1289518870040E5B3 /* Build configuration list for PBXNativeTarget "SwfityTasks" */ = {
+		43AD93D1289518870040E5B3 /* Build configuration list for PBXNativeTarget "SwiftyTasks" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				43AD93D2289518870040E5B3 /* Debug */,
@@ -582,20 +522,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		43AD93D4289518870040E5B3 /* Build configuration list for PBXNativeTarget "SwfityTasksTests" */ = {
+		43AD93D4289518870040E5B3 /* Build configuration list for PBXNativeTarget "SwiftyTasksTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				43AD93D5289518870040E5B3 /* Debug */,
 				43AD93D6289518870040E5B3 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		43AD93D7289518870040E5B3 /* Build configuration list for PBXNativeTarget "SwfityTasksUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				43AD93D8289518870040E5B3 /* Debug */,
-				43AD93D9289518870040E5B3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
