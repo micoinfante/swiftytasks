@@ -7,9 +7,12 @@ target 'SwiftyTasks' do
 
   # Pods for SwiftyTasks
 
-  #Resources
+  # Resources
   pod 'R.swift'
   pod 'SwiftLint'
+
+  # Networking
+  pod 'Alamofire'
 
 
   target 'SwiftyTasksTests' do

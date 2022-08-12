@@ -9,3 +9,4 @@
 //MARK: - Home
 
 "home.today" = "Today";
+"home.no.tasks.message" = "No Tasks Found";

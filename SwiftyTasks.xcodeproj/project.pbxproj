@@ -21,6 +21,10 @@
 		43B00BFB28A54790007EEC5A /* SwiftUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43B00BFA28A54790007EEC5A /* SwiftUI.swift */; };
 		43B00BFD28A54A7E007EEC5A /* View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43B00BFC28A54A7E007EEC5A /* View.swift */; };
 		43B00BFF28A5520C007EEC5A /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43B00BFE28A5520C007EEC5A /* Helpers.swift */; };
+		43EFC9D928A616DD00E63610 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43EFC9D828A616DD00E63610 /* Constants.swift */; };
+		43EFC9DC28A63EC000E63610 /* URLRequestBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43EFC9DB28A63EC000E63610 /* URLRequestBuilder.swift */; };
+		43EFC9DF28A640B800E63610 /* TaskRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43EFC9DE28A640B800E63610 /* TaskRepository.swift */; };
+		43EFC9E128A6418200E63610 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43EFC9E028A6418200E63610 /* NetworkService.swift */; };
 		C2130A57C4E6FF27B959AF22 /* Pods_SwiftyTasks.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FC26089F8B285D4906D9DB1 /* Pods_SwiftyTasks.framework */; };
 /* End PBXBuildFile section */
 
@@ -53,6 +57,10 @@
 		43B00BFA28A54790007EEC5A /* SwiftUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUI.swift; sourceTree = "<group>"; };
 		43B00BFC28A54A7E007EEC5A /* View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = View.swift; sourceTree = "<group>"; };
 		43B00BFE28A5520C007EEC5A /* Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helpers.swift; sourceTree = "<group>"; };
+		43EFC9D828A616DD00E63610 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		43EFC9DB28A63EC000E63610 /* URLRequestBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLRequestBuilder.swift; sourceTree = "<group>"; };
+		43EFC9DE28A640B800E63610 /* TaskRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskRepository.swift; sourceTree = "<group>"; };
+		43EFC9E028A6418200E63610 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
 		4E068459508E177574281CF7 /* Pods-SwiftyTasksTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftyTasksTests.debug.xcconfig"; path = "Target Support Files/Pods-SwiftyTasksTests/Pods-SwiftyTasksTests.debug.xcconfig"; sourceTree = "<group>"; };
 		4FC26089F8B285D4906D9DB1 /* Pods_SwiftyTasks.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftyTasks.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF8F5EEA18C5C0D04BF5C1D8 /* Pods-SwiftyTasks.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftyTasks.debug.xcconfig"; path = "Target Support Files/Pods-SwiftyTasks/Pods-SwiftyTasks.debug.xcconfig"; sourceTree = "<group>"; };
@@ -123,6 +131,8 @@
 		43AD93AF289518730040E5B3 /* SwiftyTasks */ = {
 			isa = PBXGroup;
 			children = (
+				43EFC9DD28A640A700E63610 /* Repositories */,
+				43EFC9DA28A63EB000E63610 /* Utilities */,
 				43B00BF928A54044007EEC5A /* Extensions */,
 				43B00BEA28A50AD7007EEC5A /* Views */,
 				43B00BE928A50A55007EEC5A /* Resources */,
@@ -173,6 +183,7 @@
 				43AD93DA289518D30040E5B3 /* Info.plist */,
 				43AD93B4289518870040E5B3 /* Assets.xcassets */,
 				43B00BF728A51FF8007EEC5A /* localizable.strings */,
+				43EFC9D828A616DD00E63610 /* Constants.swift */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -201,6 +212,23 @@
 				43B00BFE28A5520C007EEC5A /* Helpers.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		43EFC9DA28A63EB000E63610 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				43EFC9DB28A63EC000E63610 /* URLRequestBuilder.swift */,
+				43EFC9E028A6418200E63610 /* NetworkService.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		43EFC9DD28A640A700E63610 /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+				43EFC9DE28A640B800E63610 /* TaskRepository.swift */,
+			);
+			path = Repositories;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -415,10 +443,14 @@
 				43B00BEF28A50B21007EEC5A /* Task.swift in Sources */,
 				43B00BFB28A54790007EEC5A /* SwiftUI.swift in Sources */,
 				43AD93B3289518730040E5B3 /* ContentView.swift in Sources */,
+				43EFC9DC28A63EC000E63610 /* URLRequestBuilder.swift in Sources */,
 				43B00BFF28A5520C007EEC5A /* Helpers.swift in Sources */,
+				43EFC9DF28A640B800E63610 /* TaskRepository.swift in Sources */,
+				43EFC9D928A616DD00E63610 /* Constants.swift in Sources */,
 				43B00BED28A50B19007EEC5A /* TaskViewModel.swift in Sources */,
 				43B00BF128A515E6007EEC5A /* HomeView.swift in Sources */,
 				43AD93B1289518730040E5B3 /* SwiftyTasksApp.swift in Sources */,
+				43EFC9E128A6418200E63610 /* NetworkService.swift in Sources */,
 				43B00BF528A51B13007EEC5A /* R.generated.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -571,9 +603,9 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = SwiftyTasks/Resources/Info.plist;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
-				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
@@ -603,9 +635,9 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = SwiftyTasks/Resources/Info.plist;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
-				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;

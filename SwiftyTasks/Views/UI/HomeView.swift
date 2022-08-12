@@ -9,17 +9,23 @@ import SwiftUI
 
 struct HomeView: View {
     @StateObject var viewModel: TaskViewModel = TaskViewModel()
+    @State var selectedItem: Task?
+
+    @Namespace var animation
 
     var body: some View {
         ScrollView(.vertical, showsIndicators: false) {
             LazyVStack(spacing: 15, pinnedViews: [.sectionHeaders]) {
                 Section {
                     currentWeekView()
+
+                    tasksView()
                 } header: {
                     headerView()
                 }
             } // END: LazyVStack
         } // END: ScrollView
+        .ignoresSafeArea(.container, edges: .top)
     }
 
     private func currentWeekView() -> some View {
@@ -39,13 +45,28 @@ struct HomeView: View {
                             .frame(width: 8, height: 8)
                             .opacity(viewModel.isToday(day) ? 1 : 0)
                     } // END: VStack
+                    // MARK: Capsule Foreground
+                    .foregroundStyle(viewModel.isToday(day) ? .primary : .tertiary)
+                    .foregroundColor(viewModel.isToday(day) ? .white : .black)
+                    // MARK: Capsule Background
                     .frame(width: 45, height: 90)
                     .background(
                         ZStack {
-                            Capsule()
-                                .fill(R.color.primary.color)
+                            if viewModel.isToday(day) {
+                                Capsule()
+                                    .fill(R.color.primary.color)
+                                    .matchedGeometryEffect(id: Constants.Key.currentDay,
+                                                           in: animation)
+                            }
                         }
                     )
+                    .contentShape(Capsule())
+                    .onTapGesture {
+                        // Update Current Day
+                        withAnimation {
+                            viewModel.currentDay = day
+                        }
+                    }
                 }// END: ForEach
             } // END: HStack
             .padding(.horizontal)
@@ -66,15 +87,123 @@ struct HomeView: View {
             Button {
 
             } label: {
-                Image(systemName: "person.fill")
-                    .resizable()
-                    .aspectRatio(contentMode: .fill)
-                    .frame(width: 45, height: 45)
-                    .clipShape(Circle())
+                Image(systemName: "person.circle")
+                    .font(.largeTitle)
+                    .frame(width: 45, height: 45, alignment: .bottom)
+                    .padding(.top)
             }
         } // END: HStack
         .padding()
+        .padding(.top, getSafeArea().top)
         .background(R.color.background.color)
+    }
+
+    private func tasksView() -> some View {
+        LazyVStack(spacing: 20) {
+            if let tasks = viewModel.tasks {
+                if tasks.isEmpty {
+                    // MARK: Tasks Empty State
+                    Text(R.string.localizable.homeNoTasksMessage())
+                        .font(.system(size: 16))
+                        .fontWeight(.light)
+                        .offset(y: 100)
+                } else {
+                    // MARK: Task List View
+                    ForEach(tasks) { task in
+                        taskCardView(task: task)
+                    }
+                }
+            } else {
+                ProgressView()
+                    .offset(y: 100)
+            }
+        } // END: LazyVStack
+        .padding()
+        .padding(.top)
+        // Reload base on selected day
+        .onChange(of: viewModel.currentDay) { newValue in
+            viewModel.filterTasks()
+        }
+    }
+
+    @ViewBuilder
+    // swiftlint:disable function_body_length
+    private func taskCardView(task: Task) -> some View {
+        HStack(alignment: .top, spacing: 30) {
+            VStack(spacing: 10) {
+                Circle()
+                    .fill(selectedItem == task ? .black : .clear)
+                    .frame(width: 15, height: 15)
+                    .background(
+                        Circle()
+                            .stroke(.black, lineWidth: 1)
+                            .padding(-3)
+                    )
+                    .scaleEffect(selectedItem == task ? 0.8 : 1)
+
+                Rectangle()
+                    .fill(.black)
+                    .frame(width: 3)
+            }
+
+            VStack {
+                HStack(alignment: .top, spacing: 10) {
+                    VStack(alignment: .leading, spacing: 12) {
+                        HStack(spacing: 0) {
+                            Text(task.title)
+                                .font(.title2.bold())
+                            Spacer()
+                            Text(task.date.formatted(date: .omitted, time: .shortened))
+                                .font(.footnote)
+                                .padding(.top, 2)
+                        }
+
+                        Text(task.description)
+                            .font(.callout)
+                            .foregroundStyle(.secondary)
+                    }
+                }
+                // Change to is selected
+                if selectedItem == task {
+                    // MARK: Users
+                    HStack(spacing: 0) {
+                        HStack(spacing: -8) {
+                            ForEach(["User1", "User2", "User3"], id: \.self) { user in
+                                Image(systemName: "person")
+                                    .resizable()
+                                    .aspectRatio(contentMode: .fill)
+                                    .frame(width: 35, height: 35)
+                                    .clipShape(Circle())
+                                    .background(
+                                        Circle()
+                                            .stroke(.white, lineWidth: 0.5)
+                                            .background(
+                                                Circle()
+                                                    .foregroundColor(.gray)
+                                            )
+                                        
+                                    )
+                            }
+                        }
+                        .horizontalLeading()
+                    }
+                    .padding(.top)
+                }
+            }
+            .foregroundColor(selectedItem == task ? .white : .black)
+            .padding(selectedItem == task ? 15 : 0)
+            .padding(.bottom, selectedItem == task ? 0 : 10)
+            .horizontalLeading()
+            .background(
+                Color(uiColor: .black)
+                    .cornerRadius(25)
+                    .opacity(selectedItem == task ? 1 : 0)
+            )
+        } // END: HStack
+        .horizontalLeading()
+        .onTapGesture {
+            selectedItem = task
+        }
     }
 
 }
