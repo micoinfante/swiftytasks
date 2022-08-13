@@ -1,12 +1,12 @@
 //
-//  SwfityTasksTests.swift
+//  SwiftyTasksTests.swift
 //  SwfityTasksTests
 //
 //  Created by Mico Infante on 7/30/22.
 //
 
 import XCTest
-@testable import SwfityTasks
+@testable import SwiftyTasks
 
 class SwfityTasksTests: XCTestCase {
 

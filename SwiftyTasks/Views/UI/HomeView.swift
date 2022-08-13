@@ -18,7 +18,6 @@ struct HomeView: View {
             LazyVStack(spacing: 15, pinnedViews: [.sectionHeaders]) {
                 Section {
                     currentWeekView()
-
                     tasksView()
                 } header: {
                     headerView()
@@ -181,7 +180,6 @@ struct HomeView: View {
                                                 Circle()
                                                     .foregroundColor(.gray)
                                             )
-                                        
                                     )
                             }
                         }
