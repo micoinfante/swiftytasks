@@ -22,6 +22,14 @@
 		43B00BFD28A54A7E007EEC5A /* View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43B00BFC28A54A7E007EEC5A /* View.swift */; };
 		43B00BFF28A5520C007EEC5A /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43B00BFE28A5520C007EEC5A /* Helpers.swift */; };
 		43EA645E28A8E2FB00AEA854 /* TaskRepositoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43EA645D28A8E2FB00AEA854 /* TaskRepositoryTests.swift */; };
+		43EA646728A8EAE600AEA854 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43EA646628A8EAE600AEA854 /* WidgetKit.framework */; };
+		43EA646928A8EAE600AEA854 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43EA646828A8EAE600AEA854 /* SwiftUI.framework */; };
+		43EA646C28A8EAE600AEA854 /* SwiftyTasksWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43EA646B28A8EAE600AEA854 /* SwiftyTasksWidget.swift */; };
+		43EA646F28A8EAE700AEA854 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 43EA646E28A8EAE700AEA854 /* Assets.xcassets */; };
+		43EA647128A8EAE700AEA854 /* SwiftyTasksWidget.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 43EA646D28A8EAE600AEA854 /* SwiftyTasksWidget.intentdefinition */; };
+		43EA647228A8EAE700AEA854 /* SwiftyTasksWidget.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 43EA646D28A8EAE600AEA854 /* SwiftyTasksWidget.intentdefinition */; };
+		43EA647528A8EAE700AEA854 /* SwiftyTasksWidgetExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 43EA646528A8EAE600AEA854 /* SwiftyTasksWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		43EA647B28A8EB3200AEA854 /* TaskData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43EA647A28A8EB3200AEA854 /* TaskData.swift */; };
 		43EFC9D928A616DD00E63610 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43EFC9D828A616DD00E63610 /* Constants.swift */; };
 		43EFC9DC28A63EC000E63610 /* URLRequestBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43EFC9DB28A63EC000E63610 /* URLRequestBuilder.swift */; };
 		43EFC9DF28A640B800E63610 /* TaskRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43EFC9DE28A640B800E63610 /* TaskRepository.swift */; };
@@ -37,7 +45,28 @@
 			remoteGlobalIDString = 43AD93AC289518730040E5B3;
 			remoteInfo = SwfityTasks;
 		};
+		43EA647328A8EAE700AEA854 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 43AD93A5289518730040E5B3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 43EA646428A8EAE600AEA854;
+			remoteInfo = SwiftyTasksWidgetExtension;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		43EA647928A8EAE700AEA854 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				43EA647528A8EAE700AEA854 /* SwiftyTasksWidgetExtension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		36C426411D01E0149C941451 /* Pods-SwiftyTasks.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftyTasks.release.xcconfig"; path = "Target Support Files/Pods-SwiftyTasks/Pods-SwiftyTasks.release.xcconfig"; sourceTree = "<group>"; };
@@ -59,6 +88,14 @@
 		43B00BFC28A54A7E007EEC5A /* View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = View.swift; sourceTree = "<group>"; };
 		43B00BFE28A5520C007EEC5A /* Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helpers.swift; sourceTree = "<group>"; };
 		43EA645D28A8E2FB00AEA854 /* TaskRepositoryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskRepositoryTests.swift; sourceTree = "<group>"; };
+		43EA646528A8EAE600AEA854 /* SwiftyTasksWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = SwiftyTasksWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		43EA646628A8EAE600AEA854 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		43EA646828A8EAE600AEA854 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		43EA646B28A8EAE600AEA854 /* SwiftyTasksWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftyTasksWidget.swift; sourceTree = "<group>"; };
+		43EA646D28A8EAE600AEA854 /* SwiftyTasksWidget.intentdefinition */ = {isa = PBXFileReference; lastKnownFileType = file.intentdefinition; path = SwiftyTasksWidget.intentdefinition; sourceTree = "<group>"; };
+		43EA646E28A8EAE700AEA854 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		43EA647028A8EAE700AEA854 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		43EA647A28A8EB3200AEA854 /* TaskData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskData.swift; sourceTree = "<group>"; };
 		43EFC9D828A616DD00E63610 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		43EFC9DB28A63EC000E63610 /* URLRequestBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLRequestBuilder.swift; sourceTree = "<group>"; };
 		43EFC9DE28A640B800E63610 /* TaskRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskRepository.swift; sourceTree = "<group>"; };
@@ -86,6 +123,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		43EA646228A8EAE600AEA854 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				43EA646928A8EAE600AEA854 /* SwiftUI.framework in Frameworks */,
+				43EA646728A8EAE600AEA854 /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -94,6 +140,8 @@
 			children = (
 				4FC26089F8B285D4906D9DB1 /* Pods_SwiftyTasks.framework */,
 				FC7D8509DEA71BE599A0A307 /* Pods_SwiftyTasksTests.framework */,
+				43EA646628A8EAE600AEA854 /* WidgetKit.framework */,
+				43EA646828A8EAE600AEA854 /* SwiftUI.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -115,6 +163,7 @@
 				43B00BF428A51B13007EEC5A /* R.generated.swift */,
 				43AD93AF289518730040E5B3 /* SwiftyTasks */,
 				43AD93C0289518870040E5B3 /* SwiftyTasksTests */,
+				43EA646A28A8EAE600AEA854 /* SwiftyTasksWidget */,
 				43AD93AE289518730040E5B3 /* Products */,
 				3499BF275C5095B95A9D3AF3 /* Pods */,
 				2F8BC1C6A9518033919853C6 /* Frameworks */,
@@ -126,6 +175,7 @@
 			children = (
 				43AD93AD289518730040E5B3 /* SwiftyTasks.app */,
 				43AD93BD289518870040E5B3 /* SwiftyTasksTests.xctest */,
+				43EA646528A8EAE600AEA854 /* SwiftyTasksWidgetExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -217,6 +267,18 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
+		43EA646A28A8EAE600AEA854 /* SwiftyTasksWidget */ = {
+			isa = PBXGroup;
+			children = (
+				43EA646B28A8EAE600AEA854 /* SwiftyTasksWidget.swift */,
+				43EA646D28A8EAE600AEA854 /* SwiftyTasksWidget.intentdefinition */,
+				43EA646E28A8EAE700AEA854 /* Assets.xcassets */,
+				43EA647028A8EAE700AEA854 /* Info.plist */,
+				43EA647A28A8EB3200AEA854 /* TaskData.swift */,
+			);
+			path = SwiftyTasksWidget;
+			sourceTree = "<group>";
+		};
 		43EFC9DA28A63EB000E63610 /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
@@ -248,10 +310,12 @@
 				43AD93AB289518730040E5B3 /* Resources */,
 				0442F3FA3CBD12358B2A1FB1 /* [CP] Embed Pods Frameworks */,
 				43B00BF628A51C09007EEC5A /* Run SwiftLint Script */,
+				43EA647928A8EAE700AEA854 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				43EA647428A8EAE700AEA854 /* PBXTargetDependency */,
 			);
 			name = SwiftyTasks;
 			productName = SwfityTasks;
@@ -277,6 +341,23 @@
 			productReference = 43AD93BD289518870040E5B3 /* SwiftyTasksTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		43EA646428A8EAE600AEA854 /* SwiftyTasksWidgetExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 43EA647628A8EAE700AEA854 /* Build configuration list for PBXNativeTarget "SwiftyTasksWidgetExtension" */;
+			buildPhases = (
+				43EA646128A8EAE600AEA854 /* Sources */,
+				43EA646228A8EAE600AEA854 /* Frameworks */,
+				43EA646328A8EAE600AEA854 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SwiftyTasksWidgetExtension;
+			productName = SwiftyTasksWidgetExtension;
+			productReference = 43EA646528A8EAE600AEA854 /* SwiftyTasksWidgetExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -284,7 +365,7 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
-				LastSwiftUpdateCheck = 1300;
+				LastSwiftUpdateCheck = 1320;
 				LastUpgradeCheck = 1300;
 				TargetAttributes = {
 					43AD93AC289518730040E5B3 = {
@@ -293,6 +374,9 @@
 					43AD93BC289518870040E5B3 = {
 						CreatedOnToolsVersion = 13.0;
 						TestTargetID = 43AD93AC289518730040E5B3;
+					};
+					43EA646428A8EAE600AEA854 = {
+						CreatedOnToolsVersion = 13.2.1;
 					};
 				};
 			};
@@ -311,6 +395,7 @@
 			targets = (
 				43AD93AC289518730040E5B3 /* SwiftyTasks */,
 				43AD93BC289518870040E5B3 /* SwiftyTasksTests */,
+				43EA646428A8EAE600AEA854 /* SwiftyTasksWidgetExtension */,
 			);
 		};
 /* End PBXProject section */
@@ -330,6 +415,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		43EA646328A8EAE600AEA854 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				43EA646F28A8EAE700AEA854 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -443,6 +536,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				43B00BFD28A54A7E007EEC5A /* View.swift in Sources */,
+				43EA647228A8EAE700AEA854 /* SwiftyTasksWidget.intentdefinition in Sources */,
 				43B00BEF28A50B21007EEC5A /* Task.swift in Sources */,
 				43B00BFB28A54790007EEC5A /* SwiftUI.swift in Sources */,
 				43AD93B3289518730040E5B3 /* ContentView.swift in Sources */,
@@ -467,6 +561,16 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		43EA646128A8EAE600AEA854 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				43EA646C28A8EAE600AEA854 /* SwiftyTasksWidget.swift in Sources */,
+				43EA647128A8EAE700AEA854 /* SwiftyTasksWidget.intentdefinition in Sources */,
+				43EA647B28A8EB3200AEA854 /* TaskData.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -474,6 +578,11 @@
 			isa = PBXTargetDependency;
 			target = 43AD93AC289518730040E5B3 /* SwiftyTasks */;
 			targetProxy = 43AD93BE289518870040E5B3 /* PBXContainerItemProxy */;
+		};
+		43EA647428A8EAE700AEA854 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 43EA646428A8EAE600AEA854 /* SwiftyTasksWidgetExtension */;
+			targetProxy = 43EA647328A8EAE700AEA854 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -598,6 +707,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = BF8F5EEA18C5C0D04BF5C1D8 /* Pods-SwiftyTasks.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -632,6 +742,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 36C426411D01E0149C941451 /* Pods-SwiftyTasks.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -712,6 +823,60 @@
 			};
 			name = Release;
 		};
+		43EA647728A8EAE700AEA854 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SwiftyTasksWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = SwiftyTasksWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.kinfante.SwiftyTasks.SwiftyTasksWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		43EA647828A8EAE700AEA854 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SwiftyTasksWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = SwiftyTasksWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.kinfante.SwiftyTasks.SwiftyTasksWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -738,6 +903,15 @@
 			buildConfigurations = (
 				43AD93D5289518870040E5B3 /* Debug */,
 				43AD93D6289518870040E5B3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		43EA647628A8EAE700AEA854 /* Build configuration list for PBXNativeTarget "SwiftyTasksWidgetExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				43EA647728A8EAE700AEA854 /* Debug */,
+				43EA647828A8EAE700AEA854 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
