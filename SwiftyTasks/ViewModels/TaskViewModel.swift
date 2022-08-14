@@ -11,10 +11,11 @@ import Combine
 
 final class TaskViewModel: ObservableObject {
 
-    @Published var tasks = Task.mockedTasks
+    @Published var tasks: [Task] = []
     @Published var currentWeek: [Date] = []
     @Published var currentDay: Date = Date()
     @Published var filteredTasks: [Task]?
+    @Published var isLoading: Bool = false
 
     private var repository: TaskRepositoryProtocol
     private var cancelBag = Set<AnyCancellable>()
@@ -26,14 +27,14 @@ final class TaskViewModel: ObservableObject {
     }
 
     private func loadTasks() {
+        isLoading = true
         repository.getTasks()
             .sink { response in
+                self.isLoading = false
                 switch response.result {
                 case let .success(tasks):
                     self.tasks = tasks
-                    print("Got tasks \(tasks)")
-                case let .failure(error):
-                    print("error loading data \(error)")
+                case .failure: break
                 }
             }
             .store(in: &cancelBag)

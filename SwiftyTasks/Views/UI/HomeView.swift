@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct HomeView: View {
+
     @StateObject var viewModel: TaskViewModel = TaskViewModel()
     @State var selectedItem: Task?
 
@@ -18,7 +19,8 @@ struct HomeView: View {
             LazyVStack(spacing: 15, pinnedViews: [.sectionHeaders]) {
                 Section {
                     currentWeekView()
-                    tasksView()
+                        .unredacted(when: !viewModel.isLoading)
+                    tasksView().unredacted(when: !viewModel.isLoading)
                 } header: {
                     headerView()
                 }
@@ -77,6 +79,7 @@ struct HomeView: View {
             VStack(alignment: .leading, spacing: 10) {
                 Text(Date().formatted(date: .abbreviated, time: .omitted))
                     .foregroundColor(.gray)
+                    .font(.caption2)
 
                 Text(R.string.localizable.homeToday())
                     .font(.largeTitle.bold())
@@ -126,7 +129,6 @@ struct HomeView: View {
     }
 
     @ViewBuilder
-    // swiftlint:disable function_body_length:superfluous_disable_command
     private func taskCardView(task: Task) -> some View {
         HStack(alignment: .top, spacing: 30) {
             VStack(spacing: 10) {
@@ -144,7 +146,7 @@ struct HomeView: View {
                 Rectangle()
                     .fill(R.color.primary.color)
                     .frame(width: 3)
-            }
+            }.opacity(viewModel.isLoading ? 0 : 1)
 
             VStack {
                 HStack(alignment: .top, spacing: 10) {

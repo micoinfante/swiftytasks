@@ -31,6 +31,16 @@ extension View {
 
         return safeArea
     }
+
+    @ViewBuilder
+    func unredacted(when condition: Bool) -> some View {
+        if condition {
+            unredacted()
+        } else {
+            // Use default .placeholder or implement your custom effect
+            redacted(reason: .placeholder)
+        }
+    }
 }
 
 struct OptionalView<Value, Content>: View where Content: View {
