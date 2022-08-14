@@ -10,3 +10,5 @@
 
 "home.today" = "Today";
 "home.no.tasks.message" = "No Tasks Found";
+"home.error.general" = "Something went wrong";
+"home.failed.fetching.tasks" = "Failed To Fetch Tasks";

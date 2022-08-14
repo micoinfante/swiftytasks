@@ -16,6 +16,7 @@ final class TaskViewModel: ObservableObject {
     @Published var currentDay: Date = Date()
     @Published var filteredTasks: [Task]?
     @Published var isLoading: Bool = false
+    @Published var error: Error?
 
     private var repository: TaskRepositoryProtocol
     private var cancelBag = Set<AnyCancellable>()
@@ -27,14 +28,22 @@ final class TaskViewModel: ObservableObject {
     }
 
     private func loadTasks() {
+        // Prefill for skeleton view
+        self.tasks = Task.mockedTasks
         isLoading = true
+
         repository.getTasks()
             .sink { response in
-                self.isLoading = false
+                // Loading was too fast, just to simulate skeleton loading
+                DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
+                    self.isLoading = false
+                }
                 switch response.result {
                 case let .success(tasks):
                     self.tasks = tasks
-                case .failure: break
+                case let .failure(error):
+                    self.error = error
+                    self.tasks = []
                 }
             }
             .store(in: &cancelBag)

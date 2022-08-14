@@ -20,7 +20,8 @@ struct HomeView: View {
                 Section {
                     currentWeekView()
                         .unredacted(when: !viewModel.isLoading)
-                    tasksView().unredacted(when: !viewModel.isLoading)
+                    tasksView()
+                        .unredacted(when: !viewModel.isLoading)
                 } header: {
                     headerView()
                 }
@@ -104,13 +105,17 @@ struct HomeView: View {
         LazyVStack(spacing: 20) {
             if let tasks = viewModel.tasks {
                 if tasks.isEmpty {
-                    // MARK: Tasks Empty State
-                    Text(R.string.localizable.homeNoTasksMessage())
-                        .font(.system(size: 16))
-                        .fontWeight(.light)
-                        .offset(y: 100)
+                     // MARK: Error View
+                    if viewModel.error != nil {
+                        errorView()
+                    } else {
+                        // MARK: Empty State
+                        Text(R.string.localizable.homeNoTasksMessage())
+                            .font(.system(size: 16))
+                            .fontWeight(.regular)
+                            .offset(y: 100)
+                    }
                 } else {
-                    // MARK: Task List View
                     ForEach(tasks) { task in
                         taskCardView(task: task)
                     }
@@ -181,6 +186,18 @@ struct HomeView: View {
         }
     }
 
+    private func errorView() -> some View {
+        VStack(alignment: .center, spacing: 8) {
+            Text(R.string.localizable.homeErrorGeneral())
+                .font(.system(size: 16))
+                .fontWeight(.bold)
+                .offset(y: 100)
+            Text(R.string.localizable.homeFailedFetchingTasks())
+                .font(.system(size: 16))
+                .fontWeight(.regular)
+                .offset(y: 100)
+        }
+    }
 }
 
 struct HomeView_Previews: PreviewProvider {
