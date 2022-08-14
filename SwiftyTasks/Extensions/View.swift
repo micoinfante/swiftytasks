@@ -37,7 +37,6 @@ extension View {
         if condition {
             unredacted()
         } else {
-            // Use default .placeholder or implement your custom effect
             redacted(reason: .placeholder)
         }
     }
