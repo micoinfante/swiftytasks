@@ -21,6 +21,7 @@
 		43B00BFB28A54790007EEC5A /* SwiftUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43B00BFA28A54790007EEC5A /* SwiftUI.swift */; };
 		43B00BFD28A54A7E007EEC5A /* View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43B00BFC28A54A7E007EEC5A /* View.swift */; };
 		43B00BFF28A5520C007EEC5A /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43B00BFE28A5520C007EEC5A /* Helpers.swift */; };
+		43EA645E28A8E2FB00AEA854 /* TaskRepositoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43EA645D28A8E2FB00AEA854 /* TaskRepositoryTests.swift */; };
 		43EFC9D928A616DD00E63610 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43EFC9D828A616DD00E63610 /* Constants.swift */; };
 		43EFC9DC28A63EC000E63610 /* URLRequestBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43EFC9DB28A63EC000E63610 /* URLRequestBuilder.swift */; };
 		43EFC9DF28A640B800E63610 /* TaskRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43EFC9DE28A640B800E63610 /* TaskRepository.swift */; };
@@ -57,6 +58,7 @@
 		43B00BFA28A54790007EEC5A /* SwiftUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUI.swift; sourceTree = "<group>"; };
 		43B00BFC28A54A7E007EEC5A /* View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = View.swift; sourceTree = "<group>"; };
 		43B00BFE28A5520C007EEC5A /* Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helpers.swift; sourceTree = "<group>"; };
+		43EA645D28A8E2FB00AEA854 /* TaskRepositoryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskRepositoryTests.swift; sourceTree = "<group>"; };
 		43EFC9D828A616DD00E63610 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		43EFC9DB28A63EC000E63610 /* URLRequestBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLRequestBuilder.swift; sourceTree = "<group>"; };
 		43EFC9DE28A640B800E63610 /* TaskRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskRepository.swift; sourceTree = "<group>"; };
@@ -157,6 +159,7 @@
 			isa = PBXGroup;
 			children = (
 				43AD93C1289518870040E5B3 /* SwiftyTasksTests.swift */,
+				43EA645D28A8E2FB00AEA854 /* TaskRepositoryTests.swift */,
 			);
 			path = SwiftyTasksTests;
 			sourceTree = "<group>";
@@ -459,6 +462,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				43EA645E28A8E2FB00AEA854 /* TaskRepositoryTests.swift in Sources */,
 				43AD93C2289518870040E5B3 /* SwiftyTasksTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -80,7 +80,7 @@ struct HomeView: View {
             VStack(alignment: .leading, spacing: 10) {
                 Text(Date().formatted(date: .abbreviated, time: .omitted))
                     .foregroundColor(.gray)
-                    .font(.caption2)
+                    .font(.caption.bold())
 
                 Text(R.string.localizable.homeToday())
                     .font(.largeTitle.bold())
