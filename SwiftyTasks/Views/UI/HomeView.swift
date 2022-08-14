@@ -46,14 +46,14 @@ struct HomeView: View {
                     } // END: VStack
                     // MARK: Capsule Foreground
                     .foregroundStyle(viewModel.isToday(day) ? .primary : .tertiary)
-                    .foregroundColor(viewModel.isToday(day) ? .white : .black)
+                    .foregroundColor(viewModel.isToday(day) ? .white : .secondary)
                     // MARK: Capsule Background
                     .frame(width: 45, height: 90)
                     .background(
                         ZStack {
                             if viewModel.isToday(day) {
                                 Capsule()
-                                    .fill(R.color.primary.color)
+                                    .fill(R.color.primary_variant.color)
                                     .matchedGeometryEffect(id: Constants.Key.currentDay,
                                                            in: animation)
                             }
@@ -126,22 +126,23 @@ struct HomeView: View {
     }
 
     @ViewBuilder
-    // swiftlint:disable function_body_length
+    // swiftlint:disable function_body_length:superfluous_disable_command
     private func taskCardView(task: Task) -> some View {
         HStack(alignment: .top, spacing: 30) {
             VStack(spacing: 10) {
                 Circle()
-                    .fill(selectedItem == task ? .black : .clear)
+                    .fill(selectedItem == task ? R.color.primary.color : .clear)
                     .frame(width: 15, height: 15)
                     .background(
                         Circle()
-                            .stroke(.black, lineWidth: 1)
+                            .stroke(R.color.primary.color, lineWidth: 1)
+                            .frame(width: 18, height: 18)
                             .padding(-3)
                     )
                     .scaleEffect(selectedItem == task ? 0.8 : 1)
 
                 Rectangle()
-                    .fill(.black)
+                    .fill(R.color.primary.color)
                     .frame(width: 3)
             }
 
@@ -159,41 +160,15 @@ struct HomeView: View {
 
                         Text(task.description)
                             .font(.callout)
-                            .foregroundStyle(.secondary)
                     }
-                }
-                // Change to is selected
-                if selectedItem == task {
-                    // MARK: Users
-                    HStack(spacing: 0) {
-                        HStack(spacing: -8) {
-                            ForEach(["User1", "User2", "User3"], id: \.self) { user in
-                                Image(systemName: "person")
-                                    .resizable()
-                                    .aspectRatio(contentMode: .fill)
-                                    .frame(width: 35, height: 35)
-                                    .clipShape(Circle())
-                                    .background(
-                                        Circle()
-                                            .stroke(.white, lineWidth: 0.5)
-                                            .background(
-                                                Circle()
-                                                    .foregroundColor(.gray)
-                                            )
-                                    )
-                            }
-                        }
-                        .horizontalLeading()
-                    }
-                    .padding(.top)
                 }
             }
-            .foregroundColor(selectedItem == task ? .white : .black)
+            .foregroundColor(selectedItem == task ? .white : .secondary)
             .padding(selectedItem == task ? 15 : 0)
             .padding(.bottom, selectedItem == task ? 0 : 10)
             .horizontalLeading()
             .background(
-                Color(uiColor: .black)
+                R.color.primary.color
                     .cornerRadius(25)
                     .opacity(selectedItem == task ? 1 : 0)
             )
